@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile": "tsc",
+    "watch": "tsc -w",
+    "server": "http-server ./dist",
+    "start": "npm run compile && npm run server"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "http-server": "^14.1.1",
     "typescript": "^5.5.4"
   }
 }
