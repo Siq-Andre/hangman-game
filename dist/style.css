@@ -1,0 +1,40 @@
+body{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 30px;
+}
+
+form{
+    font-size: 30px;
+}
+
+button{
+    font-size: 20px;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 20px; 
+    padding: 20px;
+}
+
+.game-container > div {
+    flex: 1; 
+    max-width: 50%; 
+}
+
+#game_img {
+    max-width: 100%;
+    height: auto;
+}

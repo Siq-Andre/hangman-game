@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'">
+    <title>hangman</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body onload="newGame()">
+    <h1 id="title">try to guess the secret word</h1>
+    <div class="game-container">
+        <div>
+            <p id="usedLetters"></p>
+            <p id="secretWord"></p>
+            <form method="get" class="formulario" id="hangman__game">
+                <label for="letterInput">Type a letter: </label>
+                <input type="text" name="letterInput" id="letterInput" maxlength="1" pattern="[A-Za-z]" required>
+                <button type="submit" id="sendButton">Send</button>
+                <button type="button" id="resetButton">New Game</button>
+            </form>
+            <br>
+            <p>All possible words:</p>
+            <p id="allPossibleWords"></p>
+            <button type="button" id="buttonForAllPossibleWords"> Show All possible Words</button>
+        </div>
+
+        <div>
+            <img src="./img/empty_gallow.jpg" alt="empty gallow" id="game_img">
+        </div>    
+    </div>
+
+    <script src="./script.js" type="module"></script>
+</body>
+</html>
