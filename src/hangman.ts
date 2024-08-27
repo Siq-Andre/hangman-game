@@ -90,10 +90,11 @@ export class hangman{
     }
 
     gameResult(): void{
+        var maxErrorsAllowed: number = 5;
         if (this.userAnswer === this.secretWord){
             this.win = true;
         }
-        else if (this.errors === 6){
+        else if (this.errors > maxErrorsAllowed){
             this.lose = true;
         }
     }
